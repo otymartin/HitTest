@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		7D03682A7DFEBE8691426B06 /* Pods_HitTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2761C8ACE1C09870D9FF24FE /* Pods_HitTest.framework */; };
 		A1F85DB222012265000FCDAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F85DB122012265000FCDAC /* AppDelegate.swift */; };
-		A1F85DB422012265000FCDAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F85DB322012265000FCDAC /* ViewController.swift */; };
+		A1F85DB422012265000FCDAC /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F85DB322012265000FCDAC /* ParentViewController.swift */; };
 		A1F85DB722012265000FCDAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F85DB522012265000FCDAC /* Main.storyboard */; };
 		A1F85DB922012267000FCDAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F85DB822012267000FCDAC /* Assets.xcassets */; };
 		A1F85DBC22012267000FCDAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F85DBA22012267000FCDAC /* LaunchScreen.storyboard */; };
+		A1F85DC422012325000FCDAC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F85DC322012325000FCDAC /* MainViewController.swift */; };
+		A1F85DC622012339000FCDAC /* InvisibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F85DC522012339000FCDAC /* InvisibleViewController.swift */; };
+		A1F85DC822012347000FCDAC /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F85DC722012347000FCDAC /* YellowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2761C8ACE1C09870D9FF24FE /* Pods_HitTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HitTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F85DAE22012265000FCDAC /* HitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F85DB122012265000FCDAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1F85DB322012265000FCDAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1F85DB322012265000FCDAC /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		A1F85DB622012265000FCDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1F85DB822012267000FCDAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1F85DBB22012267000FCDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1F85DBD22012267000FCDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1F85DC322012325000FCDAC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A1F85DC522012339000FCDAC /* InvisibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvisibleViewController.swift; sourceTree = "<group>"; };
+		A1F85DC722012347000FCDAC /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 		ACB9E8131BEDA7B9E0F6BEE6 /* Pods-HitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HitTest.release.xcconfig"; path = "Target Support Files/Pods-HitTest/Pods-HitTest.release.xcconfig"; sourceTree = "<group>"; };
 		D775251AC9D181A00E0577BD /* Pods-HitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HitTest.debug.xcconfig"; path = "Target Support Files/Pods-HitTest/Pods-HitTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +68,10 @@
 			isa = PBXGroup;
 			children = (
 				A1F85DB122012265000FCDAC /* AppDelegate.swift */,
-				A1F85DB322012265000FCDAC /* ViewController.swift */,
+				A1F85DB322012265000FCDAC /* ParentViewController.swift */,
+				A1F85DC322012325000FCDAC /* MainViewController.swift */,
+				A1F85DC522012339000FCDAC /* InvisibleViewController.swift */,
+				A1F85DC722012347000FCDAC /* YellowViewController.swift */,
 				A1F85DB522012265000FCDAC /* Main.storyboard */,
 				A1F85DB822012267000FCDAC /* Assets.xcassets */,
 				A1F85DBA22012267000FCDAC /* LaunchScreen.storyboard */,
@@ -77,7 +86,6 @@
 				D775251AC9D181A00E0577BD /* Pods-HitTest.debug.xcconfig */,
 				ACB9E8131BEDA7B9E0F6BEE6 /* Pods-HitTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -215,7 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F85DB422012265000FCDAC /* ViewController.swift in Sources */,
+				A1F85DC822012347000FCDAC /* YellowViewController.swift in Sources */,
+				A1F85DC622012339000FCDAC /* InvisibleViewController.swift in Sources */,
+				A1F85DC422012325000FCDAC /* MainViewController.swift in Sources */,
+				A1F85DB422012265000FCDAC /* ParentViewController.swift in Sources */,
 				A1F85DB222012265000FCDAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
