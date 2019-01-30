@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D03682A7DFEBE8691426B06 /* Pods_HitTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2761C8ACE1C09870D9FF24FE /* Pods_HitTest.framework */; };
 		A1F85DB222012265000FCDAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F85DB122012265000FCDAC /* AppDelegate.swift */; };
 		A1F85DB422012265000FCDAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F85DB322012265000FCDAC /* ViewController.swift */; };
 		A1F85DB722012265000FCDAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F85DB522012265000FCDAC /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2761C8ACE1C09870D9FF24FE /* Pods_HitTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HitTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F85DAE22012265000FCDAC /* HitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F85DB122012265000FCDAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F85DB322012265000FCDAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		A1F85DB822012267000FCDAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1F85DBB22012267000FCDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1F85DBD22012267000FCDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACB9E8131BEDA7B9E0F6BEE6 /* Pods-HitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HitTest.release.xcconfig"; path = "Target Support Files/Pods-HitTest/Pods-HitTest.release.xcconfig"; sourceTree = "<group>"; };
+		D775251AC9D181A00E0577BD /* Pods-HitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HitTest.debug.xcconfig"; path = "Target Support Files/Pods-HitTest/Pods-HitTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D03682A7DFEBE8691426B06 /* Pods_HitTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				A1F85DB022012265000FCDAC /* HitTest */,
 				A1F85DAF22012265000FCDAC /* Products */,
+				DA189813E2891D90B4AD4B08 /* Pods */,
+				F078ECDDD8CDBBB5C8A84D3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,24 @@
 			path = HitTest;
 			sourceTree = "<group>";
 		};
+		DA189813E2891D90B4AD4B08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D775251AC9D181A00E0577BD /* Pods-HitTest.debug.xcconfig */,
+				ACB9E8131BEDA7B9E0F6BEE6 /* Pods-HitTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F078ECDDD8CDBBB5C8A84D3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2761C8ACE1C09870D9FF24FE /* Pods_HitTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1F85DC022012267000FCDAC /* Build configuration list for PBXNativeTarget "HitTest" */;
 			buildPhases = (
+				EA6FB47171120FE9CA7AA74D /* [CP] Check Pods Manifest.lock */,
 				A1F85DAA22012265000FCDAC /* Sources */,
 				A1F85DAB22012265000FCDAC /* Frameworks */,
 				A1F85DAC22012265000FCDAC /* Resources */,
+				848384CEE426D37C18BF02B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,59 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		848384CEE426D37C18BF02B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HitTest/Pods-HitTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AutoInsetter/AutoInsetter.framework",
+				"${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Tabman/Tabman.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AutoInsetter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pageboy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tabman.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HitTest/Pods-HitTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA6FB47171120FE9CA7AA74D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HitTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1F85DAA22012265000FCDAC /* Sources */ = {
@@ -280,6 +360,7 @@
 		};
 		A1F85DC122012267000FCDAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D775251AC9D181A00E0577BD /* Pods-HitTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +379,7 @@
 		};
 		A1F85DC222012267000FCDAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACB9E8131BEDA7B9E0F6BEE6 /* Pods-HitTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
