@@ -9,10 +9,30 @@
 import UIKit
 import Pageboy
 
-final class MainViewController: UIViewController {
+final class MainViewController: PageboyViewController {
+    
+    private var viewControllers: [UIViewController] = []
     
     override func viewDidLoad() {
+        self.viewControllers = [InvisibleViewController(), YellowViewController()]
         super.viewDidLoad()
+        self.dataSource = self
         self.view.backgroundColor = .clear
     }
+}
+
+extension MainViewController: PageboyViewControllerDataSource {
+    
+    func numberOfViewControllers(in pageboyViewController: PageboyViewController) -> Int {
+        return self.viewControllers.count
+    }
+    
+    func viewController(for pageboyViewController: PageboyViewController, at index: PageboyViewController.PageIndex) -> UIViewController? {
+        return self.viewControllers[index]
+    }
+    
+    func defaultPage(for pageboyViewController: PageboyViewController) -> PageboyViewController.Page? {
+        return .last
+    }
+    
 }
